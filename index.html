@@ -88,7 +88,7 @@
 
     var basemaps = {};
 
-    var layerControl = L.control.layers(basemaps).addTo(map);
+    var layerControl = L.control.layers(basemaps).setPosition('bottomright').addTo(map);
     layerControl.addOverlay(nanjing_1935,'Nanjing 1935 Map');
     layerControl.addOverlay(nanjing_1938,'Nanjing 1938 Map');
     
