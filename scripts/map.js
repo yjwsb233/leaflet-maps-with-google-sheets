@@ -661,15 +661,6 @@ $(window).on('load', function() {
       map.on('moveend', updateGeocoderBounds);
     }
 
-    // Add location control
-    if (getSetting('_mapMyLocation') !== 'off') {
-      var locationControl = L.control.locate({
-        keepCurrentZoomLevel: true,
-        returnToPrevBounds: true,
-        position: getSetting('_mapMyLocation')
-      }).addTo(map);
-    }
-
     // Add zoom control
     if (getSetting('_mapZoom') !== 'off') {
       L.control.zoom({position: getSetting('_mapZoom')}).addTo(map);
